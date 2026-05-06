@@ -64,6 +64,6 @@ You also have automatically two pdf's based on a LaTeX thesis and Typst thesis t
 ```
 
 ## Ready?
-Ready to write your thesis? Comment out this page in the `toc.yml` file: `- file: content/Quickstart.md` and your thesis repo is set. You can edit the existing files and / or add new files.
+Ready to write your thesis? Comment out this page in the `toc.yml` file: `- file: content/Quickstart.md` and your thesis repo is set. You can edit the existing files and add new files.
 
-Not familiar with GitHub, VSC, markdown and/or Jupyter Book? All necessary information is covered in our [TUD guide to open publishing with JupyterBook](https://tud-jb-os.github.io/book/). We included a link in the footer. More information is also available in the official [Jupyter Book documentation](https://jupyterbook.org/). For quick references, we included a [cheatsheet](./Cheatsheet.md). Problems with typst output? See the automatically build [errorlog](../errorlog.md).
+Not familiar with GitHub, VSC, markdown and/or Jupyter Book? All necessary information is covered in our [TUD guide to open publishing with JupyterBook](https://jboss.tudelft.nl/book/). More information is also available in the official [Jupyter Book documentation](https://jupyterbook.org/). For quick references, we included a [cheatsheet](./Cheatsheet.md). Problems with Typst output? See the automatically build [errorlog](../errorlog.md).

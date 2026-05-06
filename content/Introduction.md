@@ -41,11 +41,4 @@ A figure that is in the website but not in the PDF version.
 ```
 +++
 
-## With some code
-
-```{code-cell} python
-import numpy as np
-import matplotlib.pyplot as plt
-
-x = np.arange(0,100)
-```
+Moreover, sometimes you want to have content [only showing up](xref:myst-guide/creating-pdf-documents#including-content-with-specific-exports) in the pdf, if you use Typst you can use of a block `+++{raw:typst}` and for LaTeX `+++{raw:latex}`. 
