@@ -5,7 +5,7 @@ project:
   # description:
   keywords: [Jupyter Book, Open Science, TU Delft, Starterkit]
 
-  github: https://github.com/TUD-JB-OS/starterkit
+  github: https://github.com/TUD-JB-OS/starterkit # change this to your own repository
   date: 2026-01-31
   thumbnail: style/thumbnail.jpg
   numbering: 
@@ -22,10 +22,12 @@ project:
     - errorlog.md 
     - README.md
     - content/Cheatsheet.md
-    
+
+  # include a bibliography file for references in the project  
   bibliography:
     - references.bib
   
+  # setup for interactivity with Thebe and Binder
   jupyter:
     binder:
       repo: https://github.com/executablebooks/thebe-binder-base
@@ -34,30 +36,37 @@ project:
     - https://github.com/jupyter-book/myst-plugins/releases/download/iframe-to-qr-pdf/iframe-to-qr-pdf.mjs\
     - plugins/page-last-updated.mjs
     - plugins/typst_conversion-support.mjs
-    # - https://raw.githubusercontent.com/choldgraf/myst-lightbox/main/src/index.mjs # breaks binder
+    - plugins/lightbox.mjs
+    
 
 extends:
-  - toc.yml       # includes table of contents
+  - toc.yml             # includes table of contents
   - export typst.yml    # includes export configurations
-  - authors.yml   # includes author and contributor information
-  - options.yml    # includes project-specific options and metadata
+  - authors.yml         # includes author and contributor information
+  - options.yml         # includes project-specific options and metadata
   
 site:
   template: book-theme
+
+  # styling options with logo's and custom css
   options:
-    favicon: style/favicon.ico
-    logo: style/tudelft.png
-    logo_dark: style/tudelft-dark.png
-    logo_url: https://jboss.tudelft.nl
+    favicon:      style/favicon.ico
+    logo:         style/tudelft.png
+    logo_dark:    style/tudelft-dark.png
+    logo_url:     https://jboss.tudelft.nl
     hide_authors: true
-    style: style/custom.css
+    style:        style/custom.css
+  
+  # include links to downloads
   actions:
-    - title: PDF
-      url: ./exports/report_tex.pdf
-    - title: Typst PDF
-      url: ./exports/thesis.pdf
+    - title:      PDF
+      url:        ./exports/report_tex.pdf
+    - title:      Typst PDF
+      url:        ./exports/thesis.pdf
+  
+  # custom parts
   parts:
-    footer: style/footer.md
-    banner: Visit our new website at [https://jboss.tudelft.nl](https://jboss.tudelft.nl) for the latest updates and resources! See also our newest [Typst template](https://github.com/TUD-JB-OS/typst_template.git) version
+    footer:       style/footer.md
+    banner:       Visit our new website at [https://jboss.tudelft.nl](https://jboss.tudelft.nl) for the latest updates and resources! See also our newest [Typst template](https://github.com/TUD-JB-OS/typst_template.git) version
 
 # 
